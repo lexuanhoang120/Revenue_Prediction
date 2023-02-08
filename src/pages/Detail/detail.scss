@@ -1,0 +1,202 @@
+@use "../../scss/" as *;
+
+.detail {
+  padding: 100px 16px 20px;
+  position: relative;
+  @include tablet {
+    padding: 80px 16px 16px;
+  }
+  @include mobile {
+    padding: 70px 16px 16px;
+  }
+  &-btn,
+  .predict-btn {
+    margin-top: 70px !important;
+    width: 100%;
+    @include tablet {
+      margin: 40px 0 !important;
+    }
+  }
+
+  &__wrap {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+  &__left {
+    padding-top: 20px;
+    @include tablet {
+      order: 1;
+      padding-top: 60px;
+    }
+    @media (min-width: 992px) and (max-width: 1024px) {
+      width: 80% !important;
+    }
+  }
+  &__right {
+    @media (min-width: 992px) and (max-width: 1024px) {
+      width: 80%;
+    }
+  }
+  &__body {
+    padding: 48px 40px;
+    @include flex(unset, center);
+    @include tablet {
+      flex-direction: column;
+      padding: 70px 50px;
+    }
+    @media (min-width: 992px) and (max-width: 1024px) {
+      align-items: center;
+      padding: 70px 0;
+    }
+
+    @include mobile {
+      padding: 70px 10px;
+    }
+  }
+  &-input {
+    &__title {
+      background-color: #fff;
+    }
+  }
+  &-time {
+    margin-top: 80px;
+    @include tablet {
+      margin-top: 50px;
+    }
+  }
+  &-title {
+    padding-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #000;
+  }
+  &__chart {
+    border: 3px solid #3b85fe;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    @include tablet {
+      padding: 14px 0 0 0;
+    }
+    // @include mobile {
+    //   height: 400px;
+    // }
+
+    canvas {
+      position: relative;
+      // width: 100% !important;
+      // height: 100% !important;
+    }
+
+    &--title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 10px;
+      letter-spacing: 0.44px;
+      color: #263238;
+      padding: 10px 0;
+      @include tablet {
+        padding: 10px 8px;
+      }
+    }
+    &--desc {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      color: #607d8b;
+      padding: 0px 0px 10px 0px;
+      @include tablet {
+        padding: 0px 0px 10px 8px;
+      }
+    }
+  }
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: $txt-color !important;
+  border-width: 1px !important;
+}
+
+.css-q8hpuo-MuiFormControl-root {
+  border: 1px solid #000 !important;
+  padding: 10px 20px !important;
+}
+.css-1480iag-MuiInputBase-root-MuiInput-root:before {
+  border: none !important;
+}
+.css-e13as6-MuiFormControl-root-MuiTextField-root {
+  width: 100% !important;
+}
+.css-df17o1 {
+  color: black !important;
+}
+.css-19ygod6-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input.css-19ygod6-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input.css-19ygod6-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input {
+  padding-left: 10px;
+}
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  @include tablet {
+    padding: 0 10px !important;
+  }
+}
+.css-1480iag-MuiInputBase-root-MuiInput-root,
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  @include tablet {
+    font-size: 1.8rem !important;
+  }
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  @include tablet {
+    padding: 22px 14px !important;
+    font-size: 1.4rem !important;
+  }
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  @include tablet {
+    font-size: 1.8rem !important;
+  }
+}
+.from-date {
+  font-size: 100px !important;
+}
+.loading {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  @include tablet {
+    left: 45%;
+  }
+  @include mobile {
+    left: 40%;
+  }
+}
+.loading-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 200;
+}
+.block {
+  display: block !important;
+}
+// .dots {
+//   top: 200px !important;
+//   left: 10% !important;
+// }
