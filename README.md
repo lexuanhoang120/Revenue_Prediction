@@ -11,3 +11,13 @@
 ### Backend
 - Setup enviroment: pip install flask pandas flask_cors
 - Script: flask run --port 5001
+## Interface
+### Account
+- Username: admin@gmail.com
+- Password: admin
+
+![image](https://user-images.githubusercontent.com/83819024/217468851-597cf06b-6da3-4158-bef8-1e942699fbb6.png)
+
+### Interact interface
+
+![image](https://user-images.githubusercontent.com/83819024/217469449-9cacb662-9fb1-4cf9-a26e-16e12776d3c0.png)
